@@ -67,8 +67,8 @@ export default function Home() {
       </nav>
 
       <section 
-        className="relative h-[80vh] flex items-center justify-center text-white bg-cover bg-center"
-        style={{ backgroundImage: `url(${backgroundImg})` }}
+        className="relative h-[80vh] flex items-center justify-center text-white bg-center"
+        style={{ backgroundImage: `url(${backgroundImg})`, backgroundSize: '130%' }}
       >
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center max-w-4xl px-6">
