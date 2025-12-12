@@ -27,7 +27,10 @@ registerRoutes(app);
 
 (async () => {
   const vite = await createViteServer({
-    server: { middlewareMode: true },
+    server: { 
+      middlewareMode: true,
+      allowedHosts: true,
+    },
     appType: "custom",
   });
   app.use(vite.middlewares);
