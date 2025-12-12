@@ -34,7 +34,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between gap-4">
           <a href="/" className="flex-shrink-0">
-            <img src={logoCP} alt="Central Plaza" className="h-12" />
+            <img src={logoCP} alt="Central Plaza" className="h-16 md:h-20" />
           </a>
           <div className="hidden md:flex items-center gap-6">
             <a href="#residences" className="hover:text-primary transition-colors">Residences</a>
