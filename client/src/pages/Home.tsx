@@ -238,7 +238,7 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-white/70">info@empirecentralplaza.com</p>
+              <p className="text-white/70">velan@vmrpropertiesgroup.com</p>
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/50">
