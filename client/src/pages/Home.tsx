@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "../lib/queryClient";
 import logoCP from "@assets/logoCP_1765576810211.avif";
+import backgroundImg from "@assets/IMG_4329_1765578406188.jpg";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -65,8 +66,11 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="relative h-[80vh] flex items-center justify-center bg-gradient-to-br from-primary/90 to-primary/70 text-white">
-        <div className="absolute inset-0 bg-black/30" />
+      <section 
+        className="relative h-[80vh] flex items-center justify-center text-white bg-cover bg-center"
+        style={{ backgroundImage: `url(${backgroundImg})` }}
+      >
+        <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center max-w-4xl px-6">
           <h2 className="text-5xl md:text-7xl font-bold mb-6">Modern Loft Living</h2>
           <p className="text-xl md:text-2xl mb-8 opacity-90">
