@@ -143,14 +143,14 @@ export default function Home() {
           <h3 className="text-4xl font-bold text-center mb-12">Amenities</h3>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              "High Ceilings",
-              "Original Hardwoods",
               "Modern Kitchens",
               "In-Unit Laundry",
               "Central A/C",
               "Pet Friendly",
               "Secure Entry",
               "On-Site Parking",
+              "On-Site Gym",
+              "Free WiFi",
             ].map((amenity) => (
               <div key={amenity} className="bg-white rounded-lg p-6 text-center shadow-sm">
                 <p className="font-medium">{amenity}</p>
