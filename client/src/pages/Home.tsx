@@ -207,8 +207,17 @@ export default function Home() {
                 <li>• Easy access to I-35</li>
               </ul>
             </div>
-            <div className="bg-primary/10 rounded-lg h-64 flex items-center justify-center">
-              <p className="text-muted-foreground">Downtown Temple Map</p>
+            <div className="rounded-lg h-64 overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.5!2d-97.3428!3d31.0984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8645d3e5f0c7b8e5%3A0x1234567890!2s103+E+Central+Ave%2C+Temple%2C+TX+76501!5e0!3m2!1sen!2sus!4v1702400000000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Central Plaza Location"
+              />
             </div>
           </div>
         </div>
