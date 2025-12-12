@@ -118,7 +118,7 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
         <div className="relative z-10 text-center max-w-4xl px-6">
-          <p className="text-secondary font-medium tracking-[0.3em] uppercase text-sm mb-6">Welcome to Central Plaza</p>
+          <p className="text-white/90 font-medium tracking-[0.3em] uppercase text-base mb-6">Welcome to Central Plaza</p>
           <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-tight">Modern Loft Living</h1>
           <p className="text-lg md:text-xl mb-10 text-white/80 font-light max-w-2xl mx-auto leading-relaxed">
             Experience the perfect blend of historic charm and contemporary comfort in downtown Temple, Texas
