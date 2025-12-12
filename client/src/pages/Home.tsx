@@ -34,7 +34,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between gap-4">
           <a href="/" className="flex-shrink-0">
-            <img src={logoCP} alt="Empire Central Plaza" className="h-12" />
+            <img src={logoCP} alt="Central Plaza" className="h-12" />
           </a>
           <div className="hidden md:flex items-center gap-6">
             <a href="#residences" className="hover:text-primary transition-colors">Residences</a>
@@ -225,7 +225,7 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h4 className="text-xl font-bold mb-4">Empire Central Plaza</h4>
+              <h4 className="text-xl font-bold mb-4">Central Plaza</h4>
               <p className="text-white/70">Downtown Temple, Texas</p>
             </div>
             <div>
@@ -242,7 +242,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/50">
-            <p>&copy; {new Date().getFullYear()} Empire Central Plaza. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Central Plaza. All rights reserved.</p>
           </div>
         </div>
       </footer>
