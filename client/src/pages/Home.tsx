@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "../lib/queryClient";
+import logoCP from "@assets/logoCP_1765576810211.avif";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -32,7 +33,9 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between gap-4">
-          <h1 className="text-2xl font-bold text-primary">Empire Central Plaza</h1>
+          <a href="/" className="flex-shrink-0">
+            <img src={logoCP} alt="Empire Central Plaza" className="h-12" />
+          </a>
           <div className="hidden md:flex items-center gap-6">
             <a href="#residences" className="hover:text-primary transition-colors">Residences</a>
             <a href="#amenities" className="hover:text-primary transition-colors">Amenities</a>
