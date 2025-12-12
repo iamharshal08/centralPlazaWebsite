@@ -102,7 +102,7 @@ export default function Home() {
 
       <section 
         className="relative h-[80vh] flex items-center justify-center text-white bg-center"
-        style={{ backgroundImage: `url(${backgroundImg})`, backgroundSize: '130%' }}
+        style={{ backgroundImage: `url(${backgroundImg})`, backgroundSize: '100% auto', backgroundRepeat: 'no-repeat', backgroundColor: '#1a1a1a' }}
       >
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center max-w-4xl px-6">
@@ -294,7 +294,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <h4 className="text-xl font-bold mb-4">Central Plaza</h4>
-              <p className="text-white/70">Downtown Temple, Texas</p>
+              <p className="text-white/70">103 E Central Ave</p>
+              <p className="text-white/70">Temple, Texas 76501</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
