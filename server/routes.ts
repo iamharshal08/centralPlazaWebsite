@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { storage } from "./storage";
 import { insertContactSchema } from "../shared/schema";
 import { fromZodError } from "zod-validation-error";
+import { sendContactNotification } from "./resend";
 
 export function registerRoutes(app: Express): void {
   app.post("/api/contact", async (req, res) => {
@@ -13,6 +14,10 @@ export function registerRoutes(app: Express): void {
       }
       
       const contact = await storage.createContact(result.data);
+      
+      // Send email notification
+      await sendContactNotification(result.data);
+      
       res.status(201).json(contact);
     } catch (error) {
       console.error("Error creating contact:", error);
