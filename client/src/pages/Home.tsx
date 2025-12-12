@@ -86,9 +86,9 @@ export default function Home() {
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Studio", size: "400-500 sq ft", price: "From $1,200/mo" },
-              { title: "1 Bedroom", size: "600-750 sq ft", price: "From $1,500/mo" },
-              { title: "2 Bedroom", size: "900-1100 sq ft", price: "From $2,000/mo" },
+              { title: "Studio", size: "650 sq ft", price: "$1,250/mo" },
+              { title: "2 Bedroom", size: "1,200 sq ft", price: "$1,600/mo" },
+              { title: "3 Bedroom", size: "1,250 sq ft", price: "$2,000/mo" },
             ].map((unit) => (
               <div key={unit.title} className="bg-muted/30 rounded-lg p-8 hover:shadow-lg transition-shadow">
                 <h4 className="text-2xl font-semibold mb-2">{unit.title}</h4>
