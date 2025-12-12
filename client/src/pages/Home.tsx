@@ -80,7 +80,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white/98 backdrop-blur-md border-b border-border/50">
         <div className="container mx-auto px-6 lg:px-12 py-4 flex items-center justify-between gap-4">
           <a href="/" className="flex-shrink-0">
-            <img src={logoCP} alt="Central Plaza" className="h-14 md:h-16" />
+            <img src={logoCP} alt="Central Plaza" className="h-16 md:h-20" />
           </a>
           <div className="hidden lg:flex items-center gap-8">
             <a href="#residences" className="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors">Residences</a>
