@@ -3,6 +3,39 @@ import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "../lib/queryClient";
 import logoCP from "@assets/logoCP_1765576810211.avif";
 import backgroundImg from "@assets/IMG_4329_1765578406188.jpg";
+import gallery1 from "@assets/IMG_4329_1765578768782.jpg";
+import gallery2 from "@assets/IMG_4334_1765578768783.jpg";
+import gallery3 from "@assets/IMG_4376_1765578768777.jpg";
+import gallery4 from "@assets/IMG_4439_1765578768777.jpg";
+import gallery5 from "@assets/IMG_4342_1765578768783.jpg";
+import gallery6 from "@assets/IMG_4343_1765578768783.jpg";
+import gallery7 from "@assets/IMG_4395_1765578768779.jpg";
+import gallery8 from "@assets/IMG_4397_1765578768779.jpg";
+import gallery9 from "@assets/IMG_4123_1765578768784.jpg";
+import gallery10 from "@assets/IMG_4225_1765578768784.jpg";
+import gallery11 from "@assets/IMG_4230_1765578768782.jpg";
+import gallery12 from "@assets/IMG_4407_1765578768780.jpg";
+import gallery13 from "@assets/IMG_4415_1765578768780.jpg";
+import gallery14 from "@assets/IMG_4423_1765578768781.jpg";
+import gallery15 from "@assets/IMG_4124_1765578768784.jpg";
+
+const galleryImages = [
+  { src: gallery1, alt: "Building Exterior", category: "Exterior" },
+  { src: gallery2, alt: "Downtown Temple Street View", category: "Neighborhood" },
+  { src: gallery3, alt: "Aerial View of Downtown", category: "Neighborhood" },
+  { src: gallery4, alt: "Community Garden with String Lights", category: "Amenities" },
+  { src: gallery5, alt: "Open Concept Living Area", category: "Living Space" },
+  { src: gallery6, alt: "Modern Kitchen with Island", category: "Kitchen" },
+  { src: gallery7, alt: "Kitchen with Stainless Appliances", category: "Kitchen" },
+  { src: gallery8, alt: "Full Kitchen with Modern Cabinets", category: "Kitchen" },
+  { src: gallery9, alt: "Galley Kitchen with Peninsula", category: "Kitchen" },
+  { src: gallery10, alt: "Bedroom with Downtown View", category: "Bedroom" },
+  { src: gallery11, alt: "Modern Bedroom with LED Lighting", category: "Bedroom" },
+  { src: gallery12, alt: "Bedroom with Large Windows", category: "Bedroom" },
+  { src: gallery13, alt: "Bathroom Vanity with LED Mirror", category: "Bathroom" },
+  { src: gallery14, alt: "Bathroom with Tile Shower", category: "Bathroom" },
+  { src: gallery15, alt: "Living Area with In-Unit Laundry", category: "Living Space" },
+];
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -134,7 +167,25 @@ export default function Home() {
             Take a closer look at our beautifully renovated spaces
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {/* Gallery images will be added here */}
+            {galleryImages.map((image, index) => (
+              <div 
+                key={index} 
+                className="relative overflow-hidden rounded-lg group"
+                data-testid={`gallery-image-${index}`}
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.alt}
+                  className="w-full h-48 md:h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end">
+                  <div className="p-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="font-medium text-sm">{image.alt}</p>
+                    <p className="text-xs text-white/70">{image.category}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
