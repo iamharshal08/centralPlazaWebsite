@@ -40,6 +40,7 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-6">
             <a href="#residences" className="hover:text-primary transition-colors">Residences</a>
             <a href="#amenities" className="hover:text-primary transition-colors">Amenities</a>
+            <a href="#gallery" className="hover:text-primary transition-colors">Gallery</a>
             <a href="#neighborhood" className="hover:text-primary transition-colors">Neighborhood</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
           </div>
@@ -122,6 +123,18 @@ export default function Home() {
                 <p className="font-medium">{amenity}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="py-20 px-6">
+        <div className="container mx-auto">
+          <h3 className="text-4xl font-bold text-center mb-4">Gallery</h3>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Take a closer look at our beautifully renovated spaces
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {/* Gallery images will be added here */}
           </div>
         </div>
       </section>
