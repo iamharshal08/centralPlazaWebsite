@@ -31,13 +31,33 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="container mx-auto px-6 py-4 flex items-center justify-between gap-4">
           <h1 className="text-2xl font-bold text-primary">Empire Central Plaza</h1>
-          <div className="hidden md:flex gap-8">
+          <div className="hidden md:flex items-center gap-6">
             <a href="#residences" className="hover:text-primary transition-colors">Residences</a>
             <a href="#amenities" className="hover:text-primary transition-colors">Amenities</a>
             <a href="#neighborhood" className="hover:text-primary transition-colors">Neighborhood</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+          </div>
+          <div className="flex items-center gap-3">
+            <a 
+              href="https://signin.managebuilding.com/Resident/portal/global-login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 border border-primary text-primary rounded font-medium hover:bg-primary/10 transition-colors"
+              data-testid="link-resident-portal"
+            >
+              Resident Portal
+            </a>
+            <a 
+              href="https://centralplaza.managebuilding.com/Resident/rental-application/new"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-primary text-white rounded font-medium hover:bg-primary/90 transition-colors"
+              data-testid="link-apply-online"
+            >
+              Apply Online
+            </a>
           </div>
         </div>
       </nav>
